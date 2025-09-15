@@ -1,10 +1,11 @@
 import RegisterForm from "@/Components/Auth/RegisterForm";
 import { Metadata } from "next";
+import Link from "next/link";
 
-export const metadata: Metadata={
-    title:'Chastrackr - Crear cuenta',
-    description:'Chastrackr - Crear cuenta'
-}
+export const metadata: Metadata = {
+  title: "Chastrackr - Crear cuenta",
+  description: "Chastrackr - Crear cuenta",
+};
 
 const RegisterPage = () => {
   return (
@@ -15,6 +16,11 @@ const RegisterPage = () => {
       </p>
 
       <RegisterForm />
+      <nav className="mt-10 flex flex-col space-y-4">
+        <Link href="/auth/login" className="text-center text-gray-500">
+          ¿Ya tienes una cuenta? Iniciar sesión
+        </Link>
+      </nav>
     </>
   );
 };
