@@ -3,8 +3,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Chastrackr - Iniciar sesión",
-  description: "Chastrackr - Iniciar sesión",
+  title: "Chastrackr - Reestablecer contraseña",
+  description: "Chastrackr - Reestablecer contraseña",
 };
 
 const ForgotPage = () => {
@@ -14,8 +14,8 @@ const ForgotPage = () => {
         ¿Olvidaste tu contraseña?
       </h1>
       <p className="text-3xl font-bold">
-        y controla tus{" "}
-        <span className="text-amber-500">Aqui puedes reestablecerla</span>
+        Aqui puedes
+        <span className="text-amber-500"> reestablecerla</span>
       </p>
 
       <ForgotForm />
